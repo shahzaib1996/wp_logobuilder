@@ -1,0 +1,422 @@
+{
+  "appInfo":{
+    "name": "DWL Logo Builder",
+    "type": "plugin",
+    "version": "1.0.0"
+  },
+  "adminSettings":{
+    "name": "licenseVerification",
+    "selected_value": {
+      "init": "true",
+      "license": ""
+    }
+  },
+  "globalSettings": [
+  {
+      "id": "01",
+      "name": "Global",
+      "iconName": "globe",
+      "isActive": "true",
+      "description": "ABWG",
+      "categoryPages": [
+        {
+          "id": "012",
+          "name": "Logo",
+          "isActive": "true",
+          "description": "Description subpage Logo",
+          "isMobile": "true",
+          "sectionPages": [
+            {
+              "id": "012a",
+              "title": "Create your own logo",
+              "isActive": "true",
+              "displayHint": "false",
+              "hint": "This is tooltip in hint text box.",
+              "properties":[
+                {
+                  "propertyName": "",
+                  "propertyDescription": "",
+                  "component": {
+                    "type": "BaseFunctionalLogoText",
+                    "name": "textLogoFunctionalLogo",
+                    "selected_value": "",
+                    "hideInAdvancedPage":"true",
+                    "items":[
+                      {
+                        "name": "textLogoTypeText",
+                        "value": "true",
+                        "selected": "true",
+                        "options": [
+                          {
+                            "propertyName": "Icon for logo",
+                            "propertyDescription": "",
+                            "component": {
+                              "type": "BaseFunctionalLogoTextIcon",
+                              "name": "logoFunctionalLogoIcon",
+                              "selected_value": {
+                                "iconSvgCode": "<svg id=\"audio-description\" viewbox=\"0 0 512 512\"><path d=\"M162.925 238.709l8.822 30.655h-25.606l9.041-30.652c1.277-4.421 2.651-9.994 3.872-15.245 1.22 5.251 2.594 10.823 3.871 15.242zm166.474-32.099h-14.523v98.781h14.523c29.776 0 46.175-17.678 46.175-49.776 0-32.239-17.49-49.005-46.175-49.005zM512 112v288c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48zM245.459 336.139l-57.097-168A12.001 12.001 0 0 0 177 160h-35.894a12.001 12.001 0 0 0-11.362 8.139l-57.097 168C70.003 343.922 75.789 352 84.009 352h29.133a12 12 0 0 0 11.535-8.693l8.574-29.906h51.367l8.793 29.977A12 12 0 0 0 204.926 352h29.172c8.22 0 14.006-8.078 11.361-15.861zm184.701-80.525c0-58.977-37.919-95.614-98.96-95.614h-57.366c-6.627 0-12 5.373-12 12v168c0 6.627 5.373 12 12 12H331.2c61.041 0 98.96-36.933 98.96-96.386z\"></path></svg>",
+                                "iconSize": "30",
+                                "iconColor": {
+                                  "iconColorColorPicker_hex": "#0043FF",
+                                  "iconColorColorPicker_rgba": {
+                                    "r": 0,
+                                    "g": 67,
+                                    "b": 255,
+                                    "a": 1
+                                  }
+                                },
+                                "iconUse": "true",
+                                "iconTopOffset": "1",
+                                "iconLeftOffset": "0",
+                                "iconPosition": "left"
+                              },
+                              "hideInAdvancedPage":"true",
+                              "items": [
+                                {
+                                  "propertyName": "Icon position",
+                                  "propertyDescription": "Default left",
+                                  "component": {
+                                    "type": "BaseRadio",
+                                    "name": "iconPositionRadioButton",
+                                    "selected_value": "left",
+                                    "displayHint": "true",
+                                    "hint": "Choose desired icon position.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "name": "iconPositionLeft",
+                                        "value": "left",
+                                        "iconSVG": "bbyIconPositionLeft",
+                                        "selected": "true"
+                                      },
+                                      {
+                                        "name": "iconPositionTop",
+                                        "value": "top",
+                                        "iconSVG": "bbyIconPositionTop",
+                                        "selected": "false"
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Logo Icon",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseFunctionalLogoIcons",
+                                    "name": "iconFunctionalLogoIcons",
+                                    "selected_value": {
+                                      "iconSvgCode": "<svg id=\"audio-description\" viewbox=\"0 0 512 512\"><path d=\"M162.925 238.709l8.822 30.655h-25.606l9.041-30.652c1.277-4.421 2.651-9.994 3.872-15.245 1.22 5.251 2.594 10.823 3.871 15.242zm166.474-32.099h-14.523v98.781h14.523c29.776 0 46.175-17.678 46.175-49.776 0-32.239-17.49-49.005-46.175-49.005zM512 112v288c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48zM245.459 336.139l-57.097-168A12.001 12.001 0 0 0 177 160h-35.894a12.001 12.001 0 0 0-11.362 8.139l-57.097 168C70.003 343.922 75.789 352 84.009 352h29.133a12 12 0 0 0 11.535-8.693l8.574-29.906h51.367l8.793 29.977A12 12 0 0 0 204.926 352h29.172c8.22 0 14.006-8.078 11.361-15.861zm184.701-80.525c0-58.977-37.919-95.614-98.96-95.614h-57.366c-6.627 0-12 5.373-12 12v168c0 6.627 5.373 12 12 12H331.2c61.041 0 98.96-36.933 98.96-96.386z\"></path></svg>"
+                                    },
+                                    "hideInAdvancedPage":"false",
+                                    "displayHint": "true",
+                                    "hint": "Choose icon for the logo. Use search box for searching icon by name or browse through available icons directly.",
+                                    "items": []
+                                  }
+                                },
+                                {
+                                  "propertyName": "Use your own icon SVG code?",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseCheckbox",
+                                    "name": "iconOwnSVGCheckbox",
+                                    "selected_value": "false",
+                                    "hideInAdvancedPage":"false",
+                                    "licenseRequired":"false",
+                                    "displayHint": "true",
+                                    "hint": "Enable if you want to use your own SVG icon.",
+                                    "items": [
+                                      {
+                                        "name": "iconOwnSVGCheckboxNoItems",
+                                        "value": "true",
+                                        "selected": "true",
+                                        "options": [
+                                          {
+                                            "propertyName": "Icon SVG code",
+                                            "propertyDescription": "",
+                                            "component": {
+                                              "type": "BaseInputTextArea",
+                                              "name": "iconOwnSVGTextArea",
+                                              "selected_value": "",
+                                              "displayHint": "true",
+                                              "hint": "Paste your SVG code",
+                                              "hideInAdvancedPage":"false",
+                                              "items": [
+                                                {
+                                                "name": "TextArea",
+                                                "rows": "5",
+                                                "columns": "50",
+                                                "options": []
+                                              }
+                                            ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Icon size",
+                                  "propertyDescription": "Default 36px",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "iconSizeRangeSlider",
+                                    "selected_value": "30",
+                                    "displayHint": "true",
+                                    "hint": "Choose desired icon size.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "min": 2,
+                                        "max": 80,
+                                        "step": 1,
+                                        "default": 40
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Icon vertical offset",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "iconTopOffsetRangeSlider",
+                                    "selected_value": "1",
+                                    "hideInAdvancedPage":"false",
+                                    "displayHint": "true",
+                                    "hint": "Choose vertical position for the icon.",
+                                    "items": [
+                                      {
+                                        "min": 0,
+                                        "max": 50,
+                                        "step": 1,
+                                        "default": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Horizontal offset",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "iconLeftOffsetRangeSlider",
+                                    "selected_value": "0",
+                                    "displayHint": "true",
+                                    "hint": "Choose space size between icon and text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "min": -80,
+                                        "max": 80,
+                                        "step": 1,
+                                        "default": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Icon color",
+                                  "propertyDescription": "Default: #000000",
+                                  "component": {
+                                    "type": "BaseColorpicker",
+                                    "name": "iconColorColorPicker",
+                                    "selected_value": {
+                                      "iconColorColorPicker_hex": "#0043FF",
+                                      "iconColorColorPicker_rgba": {
+                                        "r": 0,
+                                        "g": 67,
+                                        "b": 255,
+                                        "a": 1
+                                      }
+                                    },
+                                    "displayHint": "true",
+                                    "hint": "Choose color for the icon.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "selectedColor": "#000000"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "propertyName": "Text for logo",
+                            "propertyDescription": "",
+                            "component": {
+                              "type": "BaseFunctionalLogoTextType",
+                              "name": "logoFunctionalLogoText",
+                              "selected_value": {
+                                "logoText": "BuilderBoy",
+                                "logoFontSize": "25",
+                                "logoFontFamily": "Noto Sans",
+                                "logoFontStyle": "normal",
+                                "logoFontUrl": "//fonts.gstatic.com/s/notosans/v12/o-0NIpQlx3QUlC5A4PNjXhFlY9aA5Wl6PQ.ttf",
+                                "logoFontWeight": "700",
+                                "logoFontLetterSpacing": "1",
+                                "logoFontColor": {
+                                  "textColorColorPicker_hex": "#D100FF",
+                                  "textColorColorPicker_rgba": {
+                                    "r": 209,
+                                    "g": 0,
+                                    "b": 255,
+                                    "a": 1
+                                  }
+                                },
+                                "logoTextTopOffset": "0",
+                                "logoTextSVG": "<svg x=\"0\" y=\"0\"><path d=\"M2.25 25L2.25 7.15L7.80 7.15Q11.60 7.15 13.31 8.23Q15.03 9.31 15.03 11.67L15.03 11.67Q15.03 13.27 14.28 14.29Q13.53 15.32 12.28 15.53L12.28 15.53L12.28 15.65Q13.98 16.03 14.73 17.07Q15.48 18.10 15.48 19.82L15.48 19.82Q15.48 22.27 13.71 23.63Q11.95 25 8.92 25L8.92 25L2.25 25ZM6.03 10.25L6.03 14.22L8.23 14.22Q9.77 14.22 10.46 13.75Q11.15 13.27 11.15 12.17L11.15 12.17Q11.15 11.15 10.39 10.70Q9.64 10.25 8.02 10.25L8.02 10.25L6.03 10.25ZM8.37 17.22L6.03 17.22L6.03 21.88L8.50 21.88Q10.06 21.88 10.80 21.28Q11.55 20.68 11.55 19.45L11.55 19.45Q11.55 17.22 8.37 17.22L8.37 17.22Z\"/></svg><svg x=\"17\" y=\"0\"><path d=\"M14.48 25L11.62 25L11.12 23.25L10.93 23.25Q10.33 24.21 9.23 24.73Q8.13 25.24 6.73 25.24L6.73 25.24Q4.32 25.24 3.10 23.96Q1.88 22.67 1.88 20.25L1.88 20.25L1.88 11.35L5.60 11.35L5.60 19.32Q5.60 20.80 6.13 21.54Q6.65 22.28 7.80 22.28L7.80 22.28Q9.36 22.28 10.06 21.23Q10.75 20.19 10.75 17.77L10.75 17.77L10.75 11.35L14.48 11.35L14.48 25Z\"/></svg><svg x=\"34\" y=\"0\"><path d=\"M1.79 7.82L1.79 7.82Q1.79 6.01 3.82 6.01L3.82 6.01Q5.85 6.01 5.85 7.82L5.85 7.82Q5.85 8.69 5.34 9.17Q4.83 9.66 3.82 9.66L3.82 9.66Q1.79 9.66 1.79 7.82ZM5.68 11.35L5.68 25L1.95 25L1.95 11.35L5.68 11.35Z\"/></svg><svg x=\"42\" y=\"0\"><path d=\"M5.68 6.01L5.68 25L1.95 25L1.95 6.01L5.68 6.01Z\"/></svg><svg x=\"50\" y=\"0\"><path d=\"M6.27 25.24L6.27 25.24Q3.87 25.24 2.50 23.38Q1.12 21.51 1.12 18.20L1.12 18.20Q1.12 14.84 2.52 12.97Q3.92 11.10 6.37 11.10L6.37 11.10Q8.95 11.10 10.30 13.10L10.30 13.10L10.42 13.10Q10.14 11.57 10.14 10.38L10.14 10.38L10.14 6.01L13.88 6.01L13.88 25L11.02 25L10.30 23.23L10.14 23.23Q8.87 25.24 6.27 25.24ZM7.58 22.28L7.58 22.28Q9.01 22.28 9.67 21.45Q10.34 20.62 10.40 18.63L10.40 18.63L10.40 18.23Q10.40 16.03 9.72 15.08Q9.05 14.12 7.52 14.12L7.52 14.12Q6.27 14.12 5.58 15.18Q4.90 16.24 4.90 18.25L4.90 18.25Q4.90 20.26 5.59 21.27Q6.29 22.28 7.58 22.28Z\"/></svg><svg x=\"66\" y=\"0\"><path d=\"M7.60 13.75L7.60 13.75Q6.42 13.75 5.75 14.50Q5.08 15.25 4.98 16.63L4.98 16.63L10.21 16.63Q10.18 15.25 9.48 14.50Q8.79 13.75 7.60 13.75ZM8.13 25.24L8.13 25.24Q4.83 25.24 2.98 23.43Q1.12 21.61 1.12 18.27L1.12 18.27Q1.12 14.84 2.84 12.97Q4.55 11.10 7.58 11.10L7.58 11.10Q10.47 11.10 12.08 12.74Q13.70 14.39 13.70 17.30L13.70 17.30L13.70 19.10L4.90 19.10Q4.96 20.69 5.83 21.58Q6.71 22.47 8.30 22.47L8.30 22.47Q9.53 22.47 10.63 22.22Q11.73 21.96 12.93 21.40L12.93 21.40L12.93 24.28Q11.95 24.77 10.84 25.01Q9.73 25.24 8.13 25.24Z\"/></svg><svg x=\"81\" y=\"0\"><path d=\"M9.57 11.10L9.57 11.10Q10.33 11.10 10.83 11.21L10.83 11.21L10.55 14.70Q10.10 14.58 9.45 14.58L9.45 14.58Q7.67 14.58 6.67 15.49Q5.68 16.41 5.68 18.05L5.68 18.05L5.68 25L1.95 25L1.95 11.35L4.77 11.35L5.32 13.65L5.51 13.65Q6.14 12.50 7.22 11.80Q8.30 11.10 9.57 11.10Z\"/></svg><svg x=\"93\" y=\"0\"><path d=\"M2.25 25L2.25 7.15L7.80 7.15Q11.60 7.15 13.31 8.23Q15.03 9.31 15.03 11.67L15.03 11.67Q15.03 13.27 14.28 14.29Q13.53 15.32 12.28 15.53L12.28 15.53L12.28 15.65Q13.98 16.03 14.73 17.07Q15.48 18.10 15.48 19.82L15.48 19.82Q15.48 22.27 13.71 23.63Q11.95 25 8.92 25L8.92 25L2.25 25ZM6.03 10.25L6.03 14.22L8.23 14.22Q9.77 14.22 10.46 13.75Q11.15 13.27 11.15 12.17L11.15 12.17Q11.15 11.15 10.39 10.70Q9.64 10.25 8.02 10.25L8.02 10.25L6.03 10.25ZM8.37 17.22L6.03 17.22L6.03 21.88L8.50 21.88Q10.06 21.88 10.80 21.28Q11.55 20.68 11.55 19.45L11.55 19.45Q11.55 17.22 8.37 17.22L8.37 17.22Z\"/></svg><svg x=\"110\" y=\"0\"><path d=\"M4.92 18.15L4.92 18.15Q4.92 20.18 5.58 21.22Q6.25 22.25 7.75 22.25L7.75 22.25Q9.24 22.25 9.89 21.22Q10.55 20.19 10.55 18.15L10.55 18.15Q10.55 16.13 9.89 15.11Q9.23 14.10 7.73 14.10L7.73 14.10Q6.24 14.10 5.58 15.11Q4.92 16.11 4.92 18.15ZM14.36 18.15L14.36 18.15Q14.36 21.48 12.60 23.36Q10.84 25.24 7.70 25.24L7.70 25.24Q5.74 25.24 4.24 24.38Q2.73 23.52 1.93 21.91Q1.12 20.30 1.12 18.15L1.12 18.15Q1.12 14.81 2.87 12.95Q4.61 11.10 7.78 11.10L7.78 11.10Q9.74 11.10 11.24 11.95Q12.74 12.81 13.55 14.40Q14.36 16.00 14.36 18.15Z\"/></svg><svg x=\"126\" y=\"0\"><path d=\"M5.42 24.90L0 11.35L4.08 11.35L6.65 19.03Q6.98 20.03 7.10 21.40L7.10 21.40L7.18 21.40Q7.31 20.14 7.70 19.03L7.70 19.03L10.23 11.35L14.22 11.35L8.45 26.75Q7.65 28.88 6.18 29.94Q4.71 31.01 2.75 31.01L2.75 31.01Q1.78 31.01 0.85 30.80L0.85 30.80L0.85 27.84Q1.53 28.00 2.32 28.00L2.32 28.00Q3.31 28.00 4.05 27.40Q4.79 26.79 5.20 25.57L5.20 25.57L5.42 24.90Z\"/></svg>"
+                              },
+                              "hideInAdvancedPage":"true",
+                              "items": [
+                                {
+                                  "propertyName": "Logo text",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseInputText",
+                                    "name": "textInputText",
+                                    "selected_value": "BuilderBoy",
+                                    "displayHint": "true",
+                                    "hint": "Type text for the logo.",
+                                    "hideInAdvancedPage":"false",
+                                    "items":[
+                                      {
+                                      "value": "",
+                                      "options": []
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Font family",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseFunctionalDropdownFonts",
+                                    "name": "textFontFamilyDropDownList",
+                                    "selected_value":"Noto Sans",
+                                    "displayHint": "true",
+                                    "hint": "Choose font face for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items":[]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Font weight",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseFunctionalDropdown",
+                                    "name": "textFontWeightDropDownList",
+                                    "selected_value":{
+                                      "logoFontStyle":"normal",
+                                      "logoFontWeight": "700",
+                                      "logoFontUrl": "//fonts.gstatic.com/s/notosans/v12/o-0NIpQlx3QUlC5A4PNjXhFlY9aA5Wl6PQ.ttf"
+                                    },
+                                    "displayHint": "true",
+                                    "hint": "Choose font type and weight for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items":[]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Font size",
+                                  "propertyDescription": "Default 36px",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "textFontSizeRangeSlider",
+                                    "selected_value": "25",
+                                    "displayHint": "true",
+                                    "hint": "Choose font size for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "min": 10,
+                                        "max": 80,
+                                        "step": 1,
+                                        "default": 25
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Letter spacing",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "textFontLetterSpacingRangeSlider",
+                                    "selected_value": "1",
+                                    "displayHint": "true",
+                                    "hint": "Choose font letter spacing for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "min": 0,
+                                        "max": 10,
+                                        "step": 1,
+                                        "default": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Text vertical offset",
+                                  "propertyDescription": "",
+                                  "component": {
+                                    "type": "BaseRangeSlider",
+                                    "name": "textTopOffsetRangeSlider",
+                                    "selected_value": "0",
+                                    "displayHint": "true",
+                                    "hint": "Choose vertical position for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "min": 0,
+                                        "max": 50,
+                                        "step": 1,
+                                        "default": 1
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "propertyName": "Font color",
+                                  "propertyDescription": "Default: #000000",
+                                  "component": {
+                                    "type": "BaseColorpicker",
+                                    "name": "textColorColorPicker",
+                                    "selected_value": {
+                                      "textColorColorPicker_hex": "#D100FF",
+                                      "textColorColorPicker_rgba": {
+                                        "r": 209,
+                                        "g": 0,
+                                        "b": 255,
+                                        "a": 1
+                                      }
+                                    },
+                                    "displayHint": "true",
+                                    "hint": "Choose color for the text.",
+                                    "hideInAdvancedPage":"false",
+                                    "items": [
+                                      {
+                                        "selectedColor": "#000000"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+  }
+]
+}
