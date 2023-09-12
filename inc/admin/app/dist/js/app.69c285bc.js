@@ -669,8 +669,9 @@
                                                               ? t._e()
                                                               : o("div", { staticClass: "bby-load-more" }, [
                                                                     o("b", { staticStyle: { color: "red !important" } }, [
-                                                                        t._v("Oh snap! You don't have an active license. You can fix it "),
-                                                                        o("a", { attrs: { href: t.buyLicenseLink } }, [t._v("here")]),
+                                                                        // t._v("Oh snap! You don't have an active license. You can fix it "),
+                                                                        // o("a", { attrs: { href: t.buyLicenseLink } }, [t._v("here")]),
+                                                                        t._v(" ")
                                                                     ]),
                                                                 ]),
                                                           t.moreIcons
